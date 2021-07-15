@@ -1,0 +1,99 @@
+
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+  "username": "nikolai",
+  "password": "nikolai"
+}
+
+###
+
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+  "username": "nikolai",
+  "password": "nikolai"
+}
+
+###
+
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+  "username": "ivan",
+  "password": "ivan"
+}
+###
+
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+  "username": "chernov",
+  "password": "chernov"
+}
+
+###
+
+POST http://localhost:5000/api/posts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGRkODllNTYyMThkZDA5MWNlZWM3MWYiLCJpYXQiOjE2MjYyMjk4MDJ9.XZovpqv0c7JqJrp5TqeGnewUdz9QJJVoItLB3vGTfV0
+
+{
+  "title": "React",
+  "description": "React",
+  "url": "react.com",
+  "status": "LEARNING"
+}
+
+###
+
+POST http://localhost:5000/api/posts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGRkODllNTYyMThkZDA5MWNlZWM3MWYiLCJpYXQiOjE2MjUyMDc3MzN9.mXFc3qQu_4xZtKTyTJWwMdbVXaCo9t45CLs47Hpxqw0
+
+{
+  "title": "Angular",
+  "description": "ANGULAR",
+  "url": "https://angular.org",
+  "status": "LEARNING"
+}
+
+###
+
+POST http://localhost:5000/api/posts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGRkODllNTYyMThkZDA5MWNlZWM3MWYiLCJpYXQiOjE2MjYyMjk4MDJ9.XZovpqv0c7JqJrp5TqeGnewUdz9QJJVoItLB3vGTfV0
+
+{
+  "title": "Vue",
+  "description": "VUE",
+  "url": "https://vuejs.org",
+  "status": "LEARNING"
+}
+
+###
+
+GET http://localhost:5000/api/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGRlODcxYWY5NDU3NTE0Y2I4MDRkN2MiLCJpYXQiOjE2MjUyMDYyMTh9.DTcqbUMb-RlSPrv5cE1VzqOjxAK7CEVfxxXewSRb2UE
+
+###
+
+PUT http://localhost:5000/api/posts/60deae8fed09e818e97ae86c
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGRlODcxYWY5NDU3NTE0Y2I4MDRkN2MiLCJpYXQiOjE2MjUyMDYyMTh9.DTcqbUMb-RlSPrv5cE1VzqOjxAK7CEVfxxXewSRb2UE
+
+{
+  "title": "Vue",
+  "description": "VUE",
+  "url": "https://vuejs.org",
+  "status": "LEARNING"
+}
+
+###
+
+DELETE http://localhost:5000/api/posts/60deae8fed09e818e97ae86c
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGRlODcxYWY5NDU3NTE0Y2I4MDRkN2MiLCJpYXQiOjE2MjUyMDYyMTh9.DTcqbUMb-RlSPrv5cE1VzqOjxAK7CEVfxxXewSRb2UE
